@@ -51,6 +51,7 @@ public class QHBActivity extends AppCompatActivity {
         if(used_count>=3){
             isCleaned=true;
             Snackbar.make(tvContent, R.string.used_clean,Snackbar.LENGTH_LONG).show();
+
         }else {
             SharedPreferences.Editor edit = sp.edit();
             used_count++;
@@ -87,4 +88,8 @@ public class QHBActivity extends AppCompatActivity {
         this.finish();
     }
 
+    @Override
+    public void onBackPressed() {
+        Toast.makeText(this,"点击home键吧",Toast.LENGTH_LONG).show();
+    }
 }
