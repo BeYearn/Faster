@@ -72,7 +72,8 @@ public class QHBAccessibilityService extends AccessibilityService {
                 } else if (className.equals("com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyDetailUI")) {
                     //退出红包
                     Log.e("demo","退出红包");
-                    inputClick("com.tencent.mm:id/gd");
+                    //inputClick("com.tencent.mm:id/gd");
+                    inputClick("com.tencent.mm:id/bi3");
                 }
                 break;
         }
