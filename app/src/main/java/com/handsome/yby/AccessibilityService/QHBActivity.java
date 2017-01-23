@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.provider.Settings;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -39,6 +40,11 @@ public class QHBActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         initView();
         checkUsedCount();
+        initSetting();
+    }
+
+    private void initSetting() {
+        PreferenceManager.setDefaultValues(this, R.xml.general_preferences, false);
     }
 
     private void checkUsedCount() {

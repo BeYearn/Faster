@@ -17,7 +17,7 @@
         </activity>
 
         <service
-            android:name="com.handsome.yby.AccessibilityService.QHBAccessibilityService"
+            android:name="com.handsome.yby.AccessibilityService.HongbaoService"
             android:enabled="true"
             android:exported="true"
             android:label="@string/label"

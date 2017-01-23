@@ -14,7 +14,9 @@ import java.util.List;
 
 /**
  * yby
+ * 用另外的那个service代替了
  */
+@Deprecated
 public class QHBAccessibilityService extends AccessibilityService {
 
     private List<AccessibilityNodeInfo> parents;
@@ -68,12 +70,11 @@ public class QHBAccessibilityService extends AccessibilityService {
                 } else if (className.equals("com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyReceiveUI")) {
                     //开红包
                     Log.e("demo","开红包");
-                    inputClick("com.tencent.mm:id/bg7");
+                    inputClick("com.tencent.mm:id/bi3");  //"开"字的id 会随着微信版本的变化而变化
                 } else if (className.equals("com.tencent.mm.plugin.luckymoney.ui.LuckyMoneyDetailUI")) {
                     //退出红包
                     Log.e("demo","退出红包");
-                    //inputClick("com.tencent.mm:id/gd");
-                    inputClick("com.tencent.mm:id/bi3");
+                    inputClick("com.tencent.mm:id/gd");
                 }
                 break;
         }
