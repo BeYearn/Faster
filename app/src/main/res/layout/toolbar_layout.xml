@@ -4,6 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="45dp"
     android:background="@color/colorPrimary"
-    toolbar:navigationIcon="@drawable/img_ema"
+    toolbar:navigationIcon="@drawable/img_icon"
     toolbar:title="hongbaozuikuai heiheihei..."
     toolbar:titleTextColor="@android:color/white" />
